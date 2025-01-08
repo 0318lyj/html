@@ -47,6 +47,22 @@
     span {
       font-size: small;
     }
+
+    /*화면상의 hr 첫번째 요소*/
+    hr:nth-of-type(1) {
+      border: 2px solid blue;
+    }
+
+    /* 화면상의 hr 뒤에서 첫번째 요소 */
+    hr:nth-last-of-type(1) {
+      border: 2px solid blue;
+    }
+
+    /* 비밀번호 input background-color의 노란색 */
+    input.password {
+      background-color: yellow;
+    }
+
   </style>
 </head>
 
@@ -63,11 +79,11 @@
     <input type="text" name="" id="member_name">
     <hr>
     <label for=""><img src="체크박스.PNG" alt="체크박스 이미지">비밀번호</label>
-    <input type="text">
+    <input type="text" class="password" name="" id="password_1">
+    <span>(8~20자의 영문대소문자,숫자,특수문자만 가능합니다.)</span>
     <hr>
     <label for=""><img src="체크박스.PNG" alt="체크박스 이미지">비밀번호 확인</label>
-    <input type="text">
-    <span>(8~20자의 영문대소문자,숫자,특수문자만 가능합니다.)</span>
+    <input type="text" name="" id="password_2">
     <hr>
     <label for=""><img src="체크박스.PNG" alt="체크박스 이미지">비밀번호 힌트</label>
     <select name="" id="hint">
@@ -111,9 +127,12 @@
     <button>인증서 등록</button>
     <span>(공무원은 인증서 등록을 해 주시기 바랍니다.)</span>
     <hr>
+    <label for="">자기소개</label>
+    <textarea name="" id="" rows="5" cols="30"></textarea>
+    <hr>
     <div class="button">
-      <input type="submit">가입신청
-      <input type="">
+      <input type="submit" value="가입신청">
+      <input type="reset">
     </div>
   </div>
 </body>
