@@ -4,6 +4,12 @@
 
 let Number1 = prompt("값을 입력하세요");
 let Number2 = prompt("값을 입력하세요");
+Number1 = ++Number1;
+Number2 = --Number2;
+console.log(Number1,Number2)
 let result = Number(Number1) * Number(Number2);
- 
-console.log(`두수의 곱셈 결과는 ${result} 입니다.`)
+console.log(`${Number1}과 ${Number2}의 곱은 ${result} 입니다.`)
+
+
+
+
