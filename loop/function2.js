@@ -14,9 +14,8 @@ for (let i = 0; i < 5; i++) {
 
 //매개변수로 받은 값중에서 제일 큰 요소를 출력 
 function getMAx(numAry = []) {
-  let max = 0; //제일 큰 값을 담아 놓을 변수 선언
-  //배열을 받 비교하도록 반복문
-  for (let i = 0; i < numAry.length; i++){
+  let max = 0;                              //제일 큰 값을 담아 놓을 변수 선언
+  for (let i = 0; i < numAry.length; i++){  //배열을 받 비교하도록 반복문
     //제일 큰 값을 max에 저장하기 
     if (max < numAry[i]) {
       max = numAry[i];
