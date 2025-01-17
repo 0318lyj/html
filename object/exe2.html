@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>exe1.html 작성.</title>
+  <title>exe2.html 작성.</title>
 </head>
 <body>
   이름: <input type="text" name="friend" value="홍길동">
+  점수: <input type="number" name="score" value="80">
   <button>친구추가</button>
-  <button name="remove">친구 삭제</button> 
+  <button name="remove">친구삭제</button> 
   <table border="1">
     <thead>
       <tr>
-        <th>이름</th>
+        <th>이름</th><th>점수</th>
       </tr>
     </thead>
     <tbody id="list"></tbody>
@@ -41,7 +42,12 @@
     })
 
     //초기값
-    let friendAry = ['정명한','김지수','고영서','이민영','정은애']
+    let friendAry = [{name:'정명한', score:80},
+                     {name:'김지수', score:70},
+                     {name:'고영서', score:85},
+                     {name:'이민영', score:75},
+                     {name:'정은애', score:90}];
+
     let targetItem = document.querySelector('#list'); //tbody
     
     //이름 출력.
