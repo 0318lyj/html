@@ -30,3 +30,5 @@ result.sort().reverse().join(); // sort 정렬 reverse 역순 정렬 join 문자
 console.log(result);
 
 
+
+
